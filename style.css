@@ -11,7 +11,6 @@ body{
     background-size: 600% 600%;
     animation:  animate 6s ease-in-out infinite ;
 }
-
 @keyframes animate{
     0%{
         background-position: 0 50%;
@@ -26,6 +25,9 @@ body{
 .container{
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .clear::after{
     content: "";
@@ -33,11 +35,8 @@ body{
     clear: both;
 }
 .content{
-    width: 50%;
+    width: 60%;
     height: auto;
-    position: absolute;
-    top: 20%;
-    left: 25%;
     border-radius: 10px;
     background-color: #fff;
 }
@@ -123,4 +122,72 @@ input:focus{
 }
 .btn-show{
     display: inline-block !important;
+}
+
+@media (max-width:1024px){
+    .content{
+        width: 80%;
+    }
+    .col-container h1{
+        font-size: 28px;
+    }
+    .col-container h2{
+        font-size: 22px;
+    }
+    .col-container input{
+        font-size: 18px;
+    }
+    .heart i{
+        padding: 6px;
+    }
+    .col-container #result{
+        font-size: 18px;
+    }
+}
+@media (max-width: 425px){
+    .content{
+        width: 80%;
+    }
+    .col-container h1{
+        font-size: 22px;
+    }
+    .col-container h2{
+        font-size: 16px;
+    }
+    .col-container input{
+        font-size: 14px;
+    }
+    .heart i{
+        padding: 6px;
+    }
+    .col-container #result{
+        font-size: 16px;
+    }
+    .col-container button{
+        font-size: 16px;
+    }
+}
+@media (max-width: 320px){
+    .content{
+        width: 80%;
+    }
+    .col-container h1{
+        font-size: 22px;
+    }
+    .col-container h2{
+        font-size: 16px;
+    }
+    .col-container input{
+        font-size: 14px;
+    }
+    .heart i{
+        font-size: 20px;
+        padding: 4px;
+    }
+    .col-container #result{
+        font-size: 16px;
+    }
+    .col-container button{
+        font-size: 14px;
+    }
 }
